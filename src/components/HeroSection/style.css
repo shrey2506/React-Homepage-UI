@@ -1,0 +1,21 @@
+.player-wrapper {
+    z-index: 1;
+    width: auto; 
+    height: auto; 
+   
+  }
+  
+  
+
+  .react-player video {
+    
+    z-index: 1;
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: none;
+}
+  
+  .react-player > div {
+    position: absolute; 
+  }
