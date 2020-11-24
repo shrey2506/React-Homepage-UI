@@ -8,7 +8,7 @@ import {HeroContainer, HeroBg,HeroContent,HeroH1,HeroP, VideoBg} from './HeroEle
 const HeroSection = () => {
     return (
        
-          <HeroContainer>
+          <HeroContainer id="home">
               <HeroBg>
                 {/* <div className='player-wrapper'>
                         <ReactPlayer
