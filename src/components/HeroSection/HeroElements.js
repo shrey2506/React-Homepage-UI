@@ -22,6 +22,10 @@ export const HeroContainer=styled.div`
        z-index: 2;            
 
    }
+
+   @media screen and (max-width: 480px){
+      height: 700px;
+    }
 `
 
 export const HeroBg=styled.div`
@@ -43,9 +47,7 @@ export const VideoBg=styled.video`
    background: #232a34;
 ` 
 export const HeroContent=styled.div`
-   margin-left: auto;
-   margin-right: auto;
-   
+   margin: auto;
    z-index: 3;
    max-width: 1200px;
    position: relative;
@@ -53,6 +55,8 @@ export const HeroContent=styled.div`
    display: flex;
    flex-direction: column;
    align-items: center;
+  
+
 `
 export const HeroH1=styled.h1`
   

@@ -20,6 +20,10 @@ export const InfoWrapper=styled.div `
    margin-left: auto;
    padding: 0 24px;
    justify-content: center;
+   @media screen and (max-width: 480px){
+     height: 500px;
+   }
+
 
 `
 export const InfoRow=styled.div`
@@ -95,5 +99,9 @@ export const Img=styled.img`
    width: 100%;
    margin: 0 0 10px 0;
    padding-right: 0;
+
+   @media screen and (max-width: 480px){
+      width: 0;
+   }
 
 `

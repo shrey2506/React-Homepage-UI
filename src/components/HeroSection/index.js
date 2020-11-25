@@ -10,24 +10,11 @@ const HeroSection = () => {
        
           <HeroContainer id="home">
               <HeroBg>
-                {/* <div className='player-wrapper'>
-                        <ReactPlayer
-                            className='react-player' 
-                            url={Video}
-                            muted={true}
-                            playing={true} 
-                            width='100%'
-                            height='100%'
-                            loop={true}   
-                        />
-
-                
-                </div> */}
                 <VideoBg  autoPlay loop muted src={Video} type='video/mp4'  />
               </HeroBg>
           
             <HeroContent>
-                 <HeroH1> I.O.T. and A.I. Solutions</HeroH1>
+                 <HeroH1>End to end automation using IoT and Blockchain</HeroH1>
                  <HeroP>
                      Contact us for turning your ideas into meaningful applications!
                  </HeroP>

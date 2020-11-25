@@ -23,11 +23,7 @@ const Footer = () => {
              <SocialMedia>
                      <SocialMediaWrap>
                          <SocialLogo to="/" onClick={toggleHome}>NanoRocks</SocialLogo>
-                    
-
-                        <WebsiteRights>Copyright (c) {new Date().getFullYear()}, All Rights Reserved.</WebsiteRights>
-
-                        <SocialIcons>
+                         <SocialIcons>
                             <SocialIconLink href="//www.facebook.com" target="_blank" aria-label="Facebook">
                                 <FaFacebook />
                             </SocialIconLink>
@@ -44,27 +40,13 @@ const Footer = () => {
                                 <FaLinkedin />
                             </SocialIconLink>
                         </SocialIcons>
+
+                        <WebsiteRights>Copyright (c) {new Date().getFullYear()}, All Rights Reserved.</WebsiteRights>
+
+                       
                      </SocialMediaWrap>
                  </SocialMedia>
-                 {/* <FooterLinksContainer>
-                     <FooterLinksWrapper>
-
-                         <FooterLinkItems>
-                             <FooterLinkTitle>About Us</FooterLinkTitle>
-                                 <FooterLink to="/">Testimonials</FooterLink>
-                                 <FooterLink to="/">Careers</FooterLink>
-                                 <FooterLink to="/">Terms Of Service</FooterLink>
-                         </FooterLinkItems>
-
-                         <FooterLinkItems>
-                             <FooterLinkTitle>Contact Us</FooterLinkTitle>
-                                 <FooterLink to="contact">Contact</FooterLink>
-                                 <FooterLink to="/">Support</FooterLink>
-                                 <FooterLink to="/">Sponcerships</FooterLink>  
-                         </FooterLinkItems>
-
-                     </FooterLinksWrapper>
-                 </FooterLinksContainer> */}
+               
              </FooterWrap>
         </FooterContainer>
     )

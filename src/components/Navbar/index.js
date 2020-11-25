@@ -1,4 +1,5 @@
 import React,{useState, useEffect} from 'react';
+import Icon from '../../Images/Untitled.png';
 import {FaBars} from 'react-icons/fa';
 import {animateScroll as scroll} from 'react-scroll';
 import {IconContext} from 'react-icons/lib';
@@ -27,7 +28,7 @@ const Navbar = ({toggle}) => {
        <IconContext.Provider value={{ color: '#fff'}}>
         <Nav scrollNav={scrollNav}>
             <NavbarContainer>
-                <NavLogo to="/" onClick={toggleHome}>NanoRocks </NavLogo>
+               <NavLogo src={Icon} onClick={toggleHome}/>
 
                 <MobileIcon onClick={toggle}>
                     <FaBars />
