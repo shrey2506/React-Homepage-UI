@@ -8,7 +8,7 @@ import {
     ServicesWrapper,
     ServicesIcon,
     ServicesH2,
-    ServicesP,
+   
     ServicesCard
 } from './ServiceElements';
 
@@ -19,20 +19,20 @@ const Services = () => {
             <ServicesWrapper>
                 <ServicesCard>
                     <ServicesIcon src={Icon1} />
-                    <ServicesH2>Robotics</ServicesH2>
-                    <ServicesP>We can provide you with Robotics Solutions</ServicesP>
+                    <ServicesH2>Internet Of Things</ServicesH2>
+                    
                 </ServicesCard>
 
                 <ServicesCard>
                     <ServicesIcon src={Icon2} />
-                    <ServicesH2>Artificial Intelligence</ServicesH2>
-                    <ServicesP>We can provide you with A.I. Solutions</ServicesP>
+                    <ServicesH2>Blockchain</ServicesH2>
+                    
                 </ServicesCard>
 
                 <ServicesCard>
                     <ServicesIcon src={Icon3} />
-                    <ServicesH2>Automation</ServicesH2>
-                    <ServicesP>We can provide you with Automation Solutions</ServicesP>
+                    <ServicesH2>Nano Technology</ServicesH2>
+                    
                 </ServicesCard>
 
                

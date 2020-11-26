@@ -47,16 +47,18 @@ export const VideoBg=styled.video`
    background: #232a34;
 ` 
 export const HeroContent=styled.div`
-   margin: auto;
+   margin-top: 0px;
+   margin-bottom: 200px;
+   margin-right: auto;
+   margin-left: auto;
    z-index: 3;
-   max-width: 1200px;
+   verticle-align: middle;
+   max-width: 3000px;
    position: relative;
    padding: 8px 24px;
    display: flex;
    flex-direction: column;
    align-items: center;
-  
-
 `
 export const HeroH1=styled.h1`
   
@@ -74,6 +76,7 @@ export const HeroH1=styled.h1`
    }
 
 `
+
 
 export const HeroP=styled.p`
    margin-top: 24px;

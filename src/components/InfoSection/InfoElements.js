@@ -20,8 +20,9 @@ export const InfoWrapper=styled.div `
    margin-left: auto;
    padding: 0 24px;
    justify-content: center;
-   @media screen and (max-width: 480px){
-     height: 500px;
+
+   @media screen and (max-width: 1024px){
+     height: 900px;
    }
 
 
@@ -100,7 +101,7 @@ export const Img=styled.img`
    margin: 0 0 10px 0;
    padding-right: 0;
 
-   @media screen and (max-width: 480px){
+   @media screen and (max-width: 768px){
       width: 0;
    }
 

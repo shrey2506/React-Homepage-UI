@@ -29,13 +29,17 @@ export const NavbarContainer = styled.div`
    width: 100%;
    padding: 0 24px;
    max-width: 1100px;
+
+`
+export const NavWrapper= styled.div`
+   verticle-align: middle;
 `
 
 export const NavLogo = styled.img`
-      margin: 15px 0 10px 0;
+      margin: 10px 0 2px 0;
       padding-left: 10px;
-      width: 150px;
-      height: 65px;
+      width: 135px;
+      height: 50px;
 
       @media screen and (max-width: 480px){
          width: 120px;
@@ -44,10 +48,18 @@ export const NavLogo = styled.img`
   
 `
 
+export const NavH5=styled.h5`
+   padding-left: 10px;
+   margin: 2px ;
+   color: #FFFFFF;
+   font-size: 10px;
+   text-align: center;
+`
+
 export const MobileIcon=styled.div`
    display: none;
 
-   @media screen and (max-width: 768px){
+   @media screen and (max-width: 1024px){
        display: block;
        position: absolute;
        top: 0;
@@ -66,7 +78,7 @@ export const NavMenu= styled.ul`
    text-align: center;
    margin-right: -22px;
 
-   @media screen and (max-width: 768px){
+   @media screen and (max-width: 1024px){
        display: none
    }
 `

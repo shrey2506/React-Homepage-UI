@@ -15,6 +15,7 @@ export const ServicesContainer = styled.div`
    @media screen and (max-width: 480px){
         height: 1300px;
    }
+  
 `
 export const ServicesWrapper = styled.div`
   
@@ -25,8 +26,8 @@ export const ServicesWrapper = styled.div`
    grid-gap: 25px;
    padding: 0 50px;
 
-   @media screen and (max-width: 1000px){
-        grid-template-columns: 1fr 1fr;
+   @media screen and (max-width: 1024px){
+        grid-template-columns: 1fr ;
         grid-gap: 20px;
    }
 
@@ -59,8 +60,8 @@ export const ServicesCard = styled.div`
 `
 
 export const ServicesIcon = styled.img`
-    height: 160px;
-    width: 160px;
+    height: 210px;
+    width: 210px;
     margin-bottom: 10px;
 `
 

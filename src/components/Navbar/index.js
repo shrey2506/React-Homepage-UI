@@ -3,7 +3,17 @@ import Icon from '../../Images/Untitled.png';
 import {FaBars} from 'react-icons/fa';
 import {animateScroll as scroll} from 'react-scroll';
 import {IconContext} from 'react-icons/lib';
-import {Nav, NavbarContainer,NavLogo,MobileIcon,NavMenu,NavItem,NavLinks} from './NavbarElements';
+import {
+      Nav, 
+      NavbarContainer,
+      NavLogo,
+      MobileIcon,
+      NavMenu,
+      NavItem,
+      NavLinks,
+      NavH5,
+      NavWrapper
+    } from './NavbarElements';
 
 const Navbar = ({toggle}) => {
     const [scrollNav,setScrollNav]=useState(false);
@@ -28,8 +38,11 @@ const Navbar = ({toggle}) => {
        <IconContext.Provider value={{ color: '#fff'}}>
         <Nav scrollNav={scrollNav}>
             <NavbarContainer>
-               <NavLogo src={Icon} onClick={toggleHome}/>
-
+                <NavWrapper>
+                    <NavLogo src={Icon} onClick={toggleHome}/>
+                    <NavH5>Think. Feel. Innovate.</NavH5>
+                </NavWrapper>
+               
                 <MobileIcon onClick={toggle}>
                     <FaBars />
                 </MobileIcon>
