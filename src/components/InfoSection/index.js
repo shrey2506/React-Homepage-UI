@@ -24,13 +24,16 @@ const InfoSection = ({
       lightText,
       headline,
       darkText,
-      description,
       buttonLabel,
       img,
       alt,
       primary,
       dark,
-      dark2
+      dark2,
+      p1,
+      p2,
+      p3,
+      
     }) => {
     return (
        <>
@@ -42,8 +45,10 @@ const InfoSection = ({
                               <TopLine>{topLine}</TopLine>
 
                               <Heading lightText={lightText}>{headline}</Heading>
-                              <Subtitle darkText={darkText}>{description}</Subtitle>
-
+                              <Subtitle darkText={darkText}>{p1}</Subtitle>
+                              <Subtitle darkText={darkText}>{p2}</Subtitle>
+                              <Subtitle darkText={darkText}>{p3}</Subtitle>
+                              
                               <BtnWrap>
                                    <Button 
                                        to="home" 

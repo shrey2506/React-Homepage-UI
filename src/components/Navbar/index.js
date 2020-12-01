@@ -1,5 +1,5 @@
 import React,{useState, useEffect} from 'react';
-import Icon from '../../Images/Untitled.png';
+import Icon from '../../Images/Logo.png';
 import {FaBars} from 'react-icons/fa';
 import {animateScroll as scroll} from 'react-scroll';
 import {IconContext} from 'react-icons/lib';
@@ -79,7 +79,7 @@ const Navbar = ({toggle}) => {
                            exact='true'
                            offset={-80}
                            
-                        >Contact Us</NavLinks>
+                        >Request A Demo</NavLinks>
                     </NavItem>
                 </NavMenu>
 

@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const InfoContainer=styled.div`
-   
    color: #fff;
    background: ${({lightBg})=> (lightBg ? '#f9f9f9': '#010606')};
 
@@ -11,24 +10,37 @@ export const InfoContainer=styled.div`
 `
 
 export const InfoWrapper=styled.div `
+  
    display: grid;
    z-index: 1;
-   height: 1000px;
+   height: 1200px;
    width: 100%;
-   max-width: 1100px;
+   max-width: 3000px;
    margin-right: auto;
    margin-left: auto;
    padding: 0 24px;
    justify-content: center;
 
    @media screen and (max-width: 1024px){
-     height: 900px;
+     padding-top: 80px;
+     height: 1200px;
    }
+
+   @media screen and (max-width: 768px){
+      padding-top: 80px;
+      height: 700px;
+    }
+
+    @media screen and (max-width: 480px){
+      height: 800px;
+      margin-top: 50px;
+    }
 
 
 `
 export const InfoRow=styled.div`
-  
+   margin-top: 0px;
+   margin-bottom: 250px;
    display: grid;
    grid-auto-columns: minmax(auto, 1fr);
    align-items: center;
@@ -49,6 +61,10 @@ export const Column2=styled.div`
    margin-bottom: 15px;
    padding: 0 15px;
    grid-area: col2;
+
+   @media screen and (max-width: 768px){
+      width: 0;
+   }
    
 `
 export const TextWrapper=styled.div`
@@ -93,7 +109,11 @@ export const BtnWrap=styled.div`
 `
 export const ImgWrap=styled.div`
    max-width: 555px;
-   height: 100%
+   height: 100%;
+
+   @media screen and (max-width: 768px){
+      width: 0;
+   }
 `
 
 export const Img=styled.img`

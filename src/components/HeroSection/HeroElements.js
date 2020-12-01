@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const HeroContainer=styled.div`
+   
    background: #0c0c0c;
    z-index: 1;
    position: relative;
@@ -23,13 +24,18 @@ export const HeroContainer=styled.div`
 
    }
 
-   @media screen and (max-width: 480px){
-      height: 700px;
+   @media screen and (max-width: 768px){
+      height: 600px;
+    }
+
+    @media screen and (max-width: 480px){
+      height: 500px;
     }
 `
 
 export const HeroBg=styled.div`
    position: absolute;
+  
    top: 0;
    right: 0;
    bottom: 0;
@@ -59,6 +65,10 @@ export const HeroContent=styled.div`
    display: flex;
    flex-direction: column;
    align-items: center;
+   @media screen and (max-width: 768px){
+      margin-top: 300px;
+    }
+
 `
 export const HeroH1=styled.h1`
   
@@ -74,6 +84,10 @@ export const HeroH1=styled.h1`
    @media screen and (max-width: 480px){
     font-size: 32px;  
    }
+
+   @media screen and (max-width: 320px){
+      font-size: 22px;  
+     }
 
 `
 

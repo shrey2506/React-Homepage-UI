@@ -40,10 +40,11 @@ export const SidebarWrapper = styled.div`
 `;
 
 export const SidebarMenu = styled.ul`
+   padding-top: 40px;
    display: grid;
    justify-content: center;
    grid-template-columns: 1fr;
-   grid-template-rows: repeat(3, 80px);
+   grid-template-rows: repeat(3, 70px);
    
    jusitfy-content: center;
    
@@ -55,7 +56,7 @@ export const SidebarMenu = styled.ul`
 export const SidebarLink = styled(LinkScroll)`
    display: flex;
    
-   font-size: 1.5rem;
+   font-size: 1rem;
    text-decoration: none;
    list-style: none;
    transition: 0.2s ease-in-out;
