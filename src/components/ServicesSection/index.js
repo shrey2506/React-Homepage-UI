@@ -1,7 +1,7 @@
 import React from 'react';
-import Icon1 from '../../Images/IOT.jpeg';
+import Icon1 from '../../Images/ServicesSection/IOT.jpeg';
 
-import Icon2 from '../../Images/NanoTech.jpeg';
+import Icon2 from '../../Images/ServicesSection/NanoTech.jpeg';
 import {
     ServicesContainer,
     ServicesH1,
@@ -31,6 +31,9 @@ const Services = () => {
                      <ServicesH2>Nano Technology</ServicesH2>
                     
                 </ServicesCard>
+
+              
+              
               
                
             </ServicesWrapper>

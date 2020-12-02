@@ -1,41 +1,50 @@
 import styled from 'styled-components';
 
-export const ServicesContainer = styled.div`
-   height: 800px;
+export const IndustryContainer = styled.div`
+   height: 1000px;
    display: flex;
    flex-direction:  column;
    justify-content: center;
    align-items: center;
    background: #010606;
+   padding-bottom: 50px;
 
+   
+
+   @media screen and (width: 1024px){
+    height: 1500px;
+   }
 
    @media screen and (max-width: 540px){
-        height: 1300px;
-       
+    height: 2000px;
    }
+
+
+  
   
 `
-export const ServicesWrapper = styled.div`
+export const IndustryWrapper = styled.div`
    
    margin: 0 auto;
    display: grid;
-   grid-template-columns: 1fr 1fr ;
+   grid-template-columns: 1fr 1fr 1fr ;
    align-items: start;
    grid-gap: 25px;
-   padding: 0 50px;
+   padding: 0 20px;
+  
 
    @media screen and (width: 1024px){
         grid-template-columns: 1fr 1fr ;
         grid-gap: 20px;
    }
 
-   @media screen and (max-width: 768px){
+   @media screen and (width: 768px){
         grid-template-columns: 1fr 1fr;
         padding: 0 20px;
         
    }
    @media screen and (max-width: 540px){
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
         margin-top: 30px;
     }
    
@@ -43,9 +52,9 @@ export const ServicesWrapper = styled.div`
 
 `
 
-export const ServicesCard = styled.div`
+export const IndustryCard = styled.div`
     
-    margin-bottom: 200px;
+    
     background: #fff;
     display: flex;
     flex-direction: column;
@@ -53,7 +62,7 @@ export const ServicesCard = styled.div`
     align-items: center;
     border-radius: 10px;
     max-height: 340px;
-    padding: 5px;
+   
     
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     transition: all 0.2s ease-in-out;
@@ -73,7 +82,8 @@ export const ServicesCard = styled.div`
     
 `
 
-export const ServicesIcon = styled.img`
+export const IndustryIcon = styled.img`
+    padding: 5px;
     border-radius: 10px;
     height: 250px;
     width: 250px;
@@ -85,7 +95,7 @@ export const ServicesIcon = styled.img`
 
 `
 
-export const ServicesH1 = styled.h1`
+export const IndustryH1 = styled.h1`
     font-size: 2.5rem;
     color: #fff;
     margin-bottom: 60px;
@@ -99,12 +109,12 @@ export const ServicesH1 = styled.h1`
     }
 `
 
-export const ServicesH2 = styled.h2`
+export const IndustryH2 = styled.h2`
     font-size: 1rem;
     margin-bottom: 10px;
 `
 
-export const ServicesP = styled.p`
+export const IndustryP = styled.p`
     font-size: 1rem;
     text-align: center;
 `
