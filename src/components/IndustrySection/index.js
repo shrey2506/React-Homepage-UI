@@ -4,7 +4,7 @@ import Icon2 from '../../Images/IndustrySection/Chemicals.jpeg';
 import Icon3 from '../../Images/IndustrySection/Pharma.jpeg';
 import Icon4 from '../../Images/IndustrySection/Automotive.jpeg';
 import Icon5 from '../../Images/IndustrySection/Agriculture.jpeg';
-import Icon6 from '../../Images/IndustrySection/Fmcg.jpeg';
+import Icon6 from '../../Images/IndustrySection/Food.jpeg';
 import {
     IndustryContainer,
     IndustryH1,
@@ -48,7 +48,7 @@ const Industries = () => {
 
                     <IndustryCard>
                         <IndustryIcon src={Icon6} />
-                        <IndustryH2>FMCG</IndustryH2>
+                        <IndustryH2>Food Technology</IndustryH2>
                     </IndustryCard>
 
 

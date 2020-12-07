@@ -1,7 +1,7 @@
 import React from 'react';
-import Icon1 from '../../Images/KnownForSection/businessTech.jpeg';
-import Icon2 from '../../Images/KnownForSection/bottomUp.jpeg';
-import Icon3 from '../../Images/KnownForSection/1.jpeg';
+import Icon1 from '../../Images/KnownForSection/IntentFocus.jpeg';
+import Icon2 from '../../Images/KnownForSection/RapidTangible.jpeg';
+import Icon3 from '../../Images/KnownForSection/DeepEngagement.jpeg';
 import {
     KnownForContainer,
     KnownForH1,
@@ -15,7 +15,7 @@ import {
 const KnownFor = () => {
     return (
         <KnownForContainer id='KnownFor'>
-            <KnownForH1>We Are Known For</KnownForH1>
+            <KnownForH1>Our Philosophy</KnownForH1>
             <KnownForWrapper>
                 
                     <KnownForCard>

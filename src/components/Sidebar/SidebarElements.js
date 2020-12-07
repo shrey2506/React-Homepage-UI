@@ -7,7 +7,7 @@ export const SidebarContainer = styled.aside`
    position: fixed;
    z-index: 999;
    width: 50%;
-   height: 50%;
+   height: 60%%;
    background: #0d0d0d;
    display: grid;
    align-items: center;
@@ -40,16 +40,16 @@ export const SidebarWrapper = styled.div`
 `;
 
 export const SidebarMenu = styled.ul`
-   padding-top: 40px;
+   padding-top: 60px;
    display: grid;
    justify-content: center;
    grid-template-columns: 1fr;
-   grid-template-rows: repeat(3, 70px);
+   grid-template-rows: repeat(5, 70px);
    
    jusitfy-content: center;
    
    @media screen and (max-width: 480px){
-       grind-template-rows: repeat(3, 60px);
+       grind-template-rows: repeat(5, 60px);
    }
 `;
 

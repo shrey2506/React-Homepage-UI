@@ -85,7 +85,7 @@ export const KnownForIcon = styled.img`
     padding: 5px;
     border-radius: 10px;
     height: 250px;
-    width: 100%;
+    width: 95%;
     margin-bottom: 10px;
     @media screen and (max-width: 1024px){
         height: 220px;

@@ -97,8 +97,15 @@ export const NavLinks=styled(LinkScroll)`
   height: 100%;
   cursor: pointer;
 
+  &:hover{
+   color: #01bf71;
+   transition: 0.3s ease-out;
+   text-decoration: none;
+  }
+
   &.active{
       border-bottom: 3px solid #01bf71;
+      text-decoration: none;
   }
 
 `

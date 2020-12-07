@@ -10,7 +10,7 @@ export const FooterWrap=styled.div`
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   ma-width: 1100px;
+   ma-width: 2000px;
    margin: 0 auto;
 `
 
@@ -25,6 +25,7 @@ export const FooterLinksContainer=styled.div`
 
 export const FooterLinksWrapper=styled.div`
    display: flex;
+   
 
    @media screen and (max-width: 820px){
        flex-direction: column;
@@ -33,10 +34,10 @@ export const FooterLinksWrapper=styled.div`
 export const FooterLinkItems=styled.div`
    display: flex;
    flex-direction: column;
-   align-items: center;
+   align-items: flex-start;
    margin: 16px;
    text-align: left;
-   width: 160px;
+   width: 260px;
    box-sizing: border-box;
    color: #fff;
 
@@ -47,19 +48,66 @@ export const FooterLinkItems=styled.div`
    }
 `
 export const FooterLinkTitle=styled.h1`
-   font-size: 16px;
-   margin: 16px;
+   font-weight: bold;
+   font-size: 20px;
+   margin-top:16px;
+   margin-bottom: 16px;
+  
 `
+export const FooterLinkSubTitle=styled.h2`
+   color: #01bf71;
+   font-weight: bold;
+   font-size: 16px; 
+   margin-top: 10px;
+`
+export const FooterLinkText=styled.h2`
+   font-weight: bold;
+   font-size: 16px; 
+`
+
 export const FooterLink=styled(Link)`
+   font-weight: bold;
    color: #fff;
    text-decoration: none;
    margin-bottom: 0.5rem;
-   font-size: 14px;
+   font-size: 16px;
 
    &:hover{
        color: #01bf71;
        transition: 0.3s ease-out;
+       text-decoration: none;
    }
+`
+
+export const FooterCard = styled.div`
+    margin-top: 18px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    max-height: 320px;
+    max-width: 340px;
+    padding: 5px;
+    
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    transition: all 0.2s ease-in-out;
+
+    &:hover{
+        transform: scale(1.02);
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 1024px){
+      max-height: 320px;
+      max-width: 300px;
+    }
+
+  
+
+    
 `
 
 export const SocialMedia=styled.section`
@@ -85,16 +133,37 @@ export const SocialLogo=styled(Link)`
    jsutify-self: start;
    cursor: pointer;
    text-decoration: none;
-   font-size: 1.5rem;
+   font-size: 2rem;
    display: flex;
    align-items: center;
    margin-bottom: 16px;
    font-weight: bold;
+
+   &:hover{
+      color: #01bf71;
+      transition: 0.3s ease-out;
+      text-decoration: none;
+  }
 `
 export const WebsiteRights=styled.small`
-   margin-top: 15px;
+   margin-top: 20px;
    color: #fff;
-   margin-bottom: 10px;
+   margin-bottom: 5px;
+   
+   @media screen and (max-width: 480px){
+      font-size: 10px;
+  }
+
+`
+export const Hr=styled.hr`
+   display: block;
+   margin-top: 0.5em;
+   margin-bottom: 0.5em;
+   margin-left: auto;
+   margin-right: auto;
+   border-style: inset;
+   border-width: 1px;
+
 `
 
 export const SocialIcons=styled.div`
@@ -102,10 +171,55 @@ export const SocialIcons=styled.div`
    justify-content: space-between;
    align-items: center;
    width: 240px;
+
+  
 `
 
 export const SocialIconLink=styled.a`
    color: #fff;
    font-size: 24px;
+`
+
+export const BtnWrap = styled.div`
+   display: flex;
+   justify-content: center;
+`
+export const Button =styled(Link)`
+   margin-top: 50px; 
+   border-radius: 50px;
+   background: #01BF71  ;
+   white-space: nowrap;
+   padding:  14px 48px;
+   color: #fff;
+   font-size:  '20px';
+   outline: none;
+  
+   border: none;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: all 0.2s ease-in-out;
+
+   &:hover{
+    transition: all 0.2s ease-in-out;
+    background:  #000 ;
+    color: #fff;
+    text-decoration: none;
+   }
+`
+export const CardItems=styled.div`
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 20px;
+  
+   text-align: center;
+   
+   @media screen and (max-width: 420px){
+        margin: 0;
+        padding: 10px;
+        width: 100%;
+   }
 `
 
