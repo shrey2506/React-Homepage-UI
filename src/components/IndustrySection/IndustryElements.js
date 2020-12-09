@@ -96,6 +96,7 @@ export const IndustryIcon = styled.img`
 `
 
 export const IndustryH1 = styled.h1`
+    font-weight: bold;
     font-size: 2.5rem;
     color: #fff;
     margin-bottom: 60px;
@@ -110,6 +111,7 @@ export const IndustryH1 = styled.h1`
 `
 
 export const IndustryH2 = styled.h2`
+    font-weight: bold;
     font-size: 1rem;
     margin-bottom: 10px;
 `

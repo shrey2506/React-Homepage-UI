@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {  useHistory } from 'react-router-dom';
 import {animateScroll as scroll} from 'react-scroll';
 import {FaFacebook,FaInstagram, FaTwitter, FaLinkedin} from 'react-icons/fa';
 import {
@@ -27,13 +27,23 @@ import {
 
 const Footer = () => {
     const toggleHome=()=>{
-        scroll.scrollToTop()
+        scroll.scrollToTop();
+        history.push("/");
+    }
+
+    const history=useHistory();
+
+    const pushToContactForm=()=>{
+       
+        history.push("/contact");
+        scroll.scrollToTop();
+       
     }
 
     return (
         <FooterContainer>
              <FooterWrap>
-             <SocialLogo to="/" onClick={toggleHome}>NanoRocks</SocialLogo>
+             <SocialLogo to="/" onClick={toggleHome}>NanoRocks Innovation LLP</SocialLogo>
             
                <FooterLinksContainer>
                     {/* contact us section */}
@@ -76,7 +86,7 @@ const Footer = () => {
                               <FooterLinkTitle className="pb-10">SUBMIT RFP</FooterLinkTitle>
                                 <FooterLinkText>Find out how our teams expertise can help you and your company</FooterLinkText>
                                 <BtnWrap>
-                                   <Button>SUBMIT</Button>
+                                   <Button onClick={pushToContactForm}>SUBMIT</Button>
                                 </BtnWrap>
                               </CardItems>
                                

@@ -86,6 +86,7 @@ export const ServicesIcon = styled.img`
 `
 
 export const ServicesH1 = styled.h1`
+    font-weight: bold;
     font-size: 2.5rem;
     color: #fff;
     margin-bottom: 60px;
@@ -100,6 +101,7 @@ export const ServicesH1 = styled.h1`
 `
 
 export const ServicesH2 = styled.h2`
+    font-weight: bold;
     font-size: 1rem;
     margin-bottom: 10px;
 `

@@ -1,15 +1,13 @@
 import styled from 'styled-components';
 
 export const KnownForContainer = styled.div`
+   padding-top:10px;
    height: 800px;
    display: flex;
    flex-direction:  column;
    justify-content: center;
    align-items: center;
    background: #010606;
-
-   
-
 
    @media screen and (max-width: 768px){
     height: 1300px;
@@ -58,11 +56,9 @@ export const KnownForCard = styled.div`
     justify-content: flex-start;
     align-items: center;
     border-radius: 10px;
-    max-height: 340px;
+    height: 320px;
     max-width: 300px;
-    
-   
-    
+        
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     transition: all 0.2s ease-in-out;
 
@@ -75,29 +71,28 @@ export const KnownForCard = styled.div`
     @media screen and (max-width: 1024px){
         margin-bottom: 0px;
     }
-
-  
-
     
 `
 
 export const KnownForIcon = styled.img`
-    padding: 5px;
+    margin-top: 10px;
     border-radius: 10px;
-    height: 250px;
-    width: 95%;
+    height: 60%;
+    width: 60%;
     margin-bottom: 10px;
-    @media screen and (max-width: 1024px){
-        height: 220px;
-        width: 100%;
-    }
+    // @media screen and (max-width: 1024px){
+    //     height: 220px;
+    //     width: 100%;
+    // }
 
 `
 
 export const KnownForH1 = styled.h1`
+    
     font-size: 2.5rem;
     color: #fff;
     margin-bottom: 60px;
+    font-weight: bold;
 
     @media screen and (max-width: 480px){
         font-size: 2rem;
@@ -105,10 +100,12 @@ export const KnownForH1 = styled.h1`
 
     @media screen and (max-width: 768px){
         margin-bottom: 20px;
+        margin-top: 50px;
     }
 `
 
 export const KnownForH2 = styled.h2`
+    font-weight: bold;
     font-size: 1rem;
     margin-bottom: 10px;
    

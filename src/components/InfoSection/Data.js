@@ -3,7 +3,7 @@ export const HomeObjOne={
     lightBg: false,
     lightText: true,
     lighttextDesc: true,
-    topLine: 'NanoRocks',
+    topLine: 'NanoRocks Innovation',
     headline: 'About Us',
     p1: `
     NanoRocks is an engineering and manufacturing company that develops process control and information solutions to ERP integration.

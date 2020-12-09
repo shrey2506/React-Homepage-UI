@@ -1,4 +1,5 @@
 import React,{useState, useEffect} from 'react';
+import {  useHistory } from 'react-router-dom';
 import Icon from '../../Images/Logo.png';
 import {FaBars} from 'react-icons/fa';
 import {animateScroll as scroll} from 'react-scroll';
@@ -18,8 +19,12 @@ import {
 const Navbar = ({toggle}) => {
     const [scrollNav,setScrollNav]=useState(false);
 
+   
+    const history=useHistory();
+
     const toggleHome=()=>{
-        scroll.scrollToTop()
+        scroll.scrollToTop();
+        history.push("/");
     }
 
     const changeNav=()=>{
@@ -29,6 +34,8 @@ const Navbar = ({toggle}) => {
             setScrollNav(false);
         }
     }
+
+
 
     useEffect(() => {
         window.addEventListener('scroll',changeNav);

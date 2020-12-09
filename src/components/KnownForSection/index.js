@@ -20,7 +20,7 @@ const KnownFor = () => {
                 
                     <KnownForCard>
                         <KnownForIcon src={Icon1} />
-                        <KnownForH2>Intent focus on the business implications of technological change</KnownForH2>
+                        <KnownForH2>Helping organizations leverage the full potential bringing new innovations and refinements to their business processes</KnownForH2>
                     </KnownForCard>
                    
                
@@ -28,7 +28,7 @@ const KnownFor = () => {
 
                 <KnownForCard>
                     <KnownForIcon src={Icon2} />
-                     <KnownForH2>Rapid and tangible results enabled by proprietary bottom-up research</KnownForH2>
+                     <KnownForH2> Save time and costs by making your business process smarter</KnownForH2>
                     
                 </KnownForCard>
 
