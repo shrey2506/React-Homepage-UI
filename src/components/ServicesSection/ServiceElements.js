@@ -110,3 +110,46 @@ export const ServicesP = styled.p`
     font-size: 1rem;
     text-align: center;
 `
+export const Subtitle = styled.p`
+   text-align: left;
+   max-width: 540px;
+   margin-bottom: 35px;
+   font-weight: bold;
+   font-size: 20px;
+   line-height: 24px;
+   color:  #fff;
+
+   @media screen and (width: 1024px){
+       
+    font-size: 16px;
+   }
+`
+
+export const Wrapper = styled.div`
+   
+   margin: 40px auto;
+   display: grid;
+   grid-template-columns: 1fr  ;
+   align-items: start;
+   grid-gap: 25px;
+   padding: 0 50px;
+
+   @media screen and (width: 1024px){
+       
+        grid-gap: 20px;
+        padding-top: 40px
+   }
+
+   @media screen and (max-width: 768px){
+       
+        padding-top: 40px
+        
+   }
+   @media screen and (max-width: 540px){
+        
+        margin-top: 30px;
+    }
+   
+
+
+`

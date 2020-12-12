@@ -6,14 +6,12 @@ export const HomeObjOne={
     topLine: 'NanoRocks Innovation',
     headline: 'About Us',
     p1: `
-    NanoRocks is an engineering and manufacturing company that develops process control and information solutions to ERP integration.
+    NanoRocks Innovation is an advisory firm focused on industrial digitalization. We provides control and automation solutions to our OEM's industrial end-users and system integrators using IIOT and industry 4.0 based cutting edge technology.
     `,
     p2: `
-    NanoRocks is focused on solving the main global problems in the manufacturing & ONGC industry: the lack of quality control, and the production of defects at customer site. Also we specialize in providing Process automation, Instrumentation and control, system integration solutions & services to Oil & gas, Manufacturing, automotive, Petrochemicals, Power industry segments, Gas distribution, cement, Pharmaceutical.
+    We provide innovative solutions for the most demanding industrial applications at the edge. The technology includes rugged computing and communication solutions with specialization in IoT. All our solutions are driven by a continuous alignment of IT and OT for best operational and business performance. In this way we empower customers to bring OT into the digital age and gain access to valuable IoT data, for analysis and management implications.
     `,
-    p3: `
-    Our advanced automation technology expertise can quickly reduce your manufacturing cost and assure you of total system compatibility.
-    `,
+   
    
     buttonLabel: 'Get Started',
     imgStart: false,
@@ -54,6 +52,26 @@ export const HomeObjThree={
     buttonLabel: 'TALK TO AN EXPERT',
     imgStart: false,
     img: '/images/contact.svg',
+    alt: 'IOT',
+    dark: true,
+    dark2: true,
+    primary: true,
+    darkText: false
+}
+
+export const HomeObjFour={
+    id: 'whyUs',
+    lightBg: false,
+    lightText: true,
+    lighttextDesc: true,
+    topLine: '',
+    headline: 'Why Us',
+    p1: 'Smart Factory solutions for Original Equipment Manufacturers (OEM) and Heavy Machinery manufacturers',
+    p2: '1. Provide gateways, network, comprehensive software and support services for an end-to-end IoT solution.  Use information from your processes to make your customers more loyal.',
+    p3: '2. Smart factory Solutions for Original Equipment Manufacturers (OEM) and Heavy Machinery manufacturers, first iteration of the solution within 7 business days with detailed reports & analytics. Efficient packaging & configuration management support & services post deployment',
+    imgStart: false,
+    buttonLabel: 'CONTACT US',
+    img: '/images/question.svg',
     alt: 'IOT',
     dark: true,
     dark2: true,

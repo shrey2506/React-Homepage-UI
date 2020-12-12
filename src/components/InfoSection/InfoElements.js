@@ -13,7 +13,7 @@ export const InfoWrapper = styled.div`
   
    display: grid;
    z-index: 1;
-   height: 1200px;
+   height: 1000px;
    width: 100%;
    max-width: 3000px;
    margin-right: auto;
@@ -40,7 +40,7 @@ export const InfoWrapper = styled.div`
 `
 export const InfoRow = styled.div`
    margin-top: 0px;
-   margin-bottom: 250px;
+   margin-bottom: 100px;
    display: grid;
    grid-auto-columns: minmax(auto, 1fr);
    align-items: center;
@@ -100,6 +100,7 @@ export const Heading = styled.h1`
 `
 
 export const Subtitle = styled.p`
+    text-align: left;
    max-width: 440px;
    margin-bottom: 35px;
    font-size: 18px;

@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import Aos from 'aos';
 import Icon1 from '../../Images/IndustrySection/IndustrialAutomation.jpeg';
 import Icon2 from '../../Images/IndustrySection/Chemicals.jpeg';
 import Icon3 from '../../Images/IndustrySection/Pharma.jpeg';
@@ -16,38 +17,45 @@ import {
 } from './IndustryElements';
 
 const Industries = () => {
+
+    useEffect(()=>{
+        Aos.init({
+            duration: 2000
+        });
+   },[]);
+
     return (
         <IndustryContainer id='Industry'>
-            <IndustryH1>Industries We Serve</IndustryH1>
+            <IndustryH1 data-aos="fade-down">Industries We Serve</IndustryH1>
             <IndustryWrapper>
                 
                     <IndustryCard>
-                        <IndustryIcon src={Icon1} />
+                        <IndustryIcon data-aos="fade-right" src={Icon1} />
                         <IndustryH2>Industrial Automation</IndustryH2>
                     </IndustryCard>
                    
                     <IndustryCard>
-                        <IndustryIcon src={Icon2} />
+                        <IndustryIcon data-aos="fade-down" src={Icon2} />
                         <IndustryH2>Chemical and Manufacturing</IndustryH2>
                     </IndustryCard>
 
                     <IndustryCard>
-                        <IndustryIcon src={Icon3} />
+                        <IndustryIcon data-aos="fade-left" src={Icon3} />
                         <IndustryH2>Pharmaceuticals</IndustryH2>
                     </IndustryCard>
 
                     <IndustryCard>
-                        <IndustryIcon src={Icon4} />
+                        <IndustryIcon data-aos="fade-right" src={Icon4} />
                         <IndustryH2>Automotive</IndustryH2>
                     </IndustryCard>
 
                     <IndustryCard>
-                        <IndustryIcon src={Icon5} />
+                        <IndustryIcon data-aos="fade-up" src={Icon5} />
                         <IndustryH2>Agriculture</IndustryH2>
                     </IndustryCard>
 
                     <IndustryCard>
-                        <IndustryIcon src={Icon6} />
+                        <IndustryIcon data-aos="fade-left" src={Icon6} />
                         <IndustryH2>Food Technology</IndustryH2>
                     </IndustryCard>
 

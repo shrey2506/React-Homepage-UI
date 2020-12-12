@@ -1,4 +1,7 @@
 import React from 'react';
+import AddressIcon from '../../Images/Footer/map.svg';
+import PhoneIcon from '../../Images/Footer/call.svg';
+import MailIcon from '../../Images/Footer/mail.svg';
 import {  useHistory } from 'react-router-dom';
 import {animateScroll as scroll} from 'react-scroll';
 import {FaFacebook,FaInstagram, FaTwitter, FaLinkedin} from 'react-icons/fa';
@@ -22,7 +25,9 @@ import {
     FooterCard,
     BtnWrap,
     Button,
-    CardItems
+    CardItems,
+    FooterImg,
+    
 } from './FooterElements';
 
 const Footer = () => {
@@ -40,6 +45,20 @@ const Footer = () => {
        
     }
 
+    const pushToTermsOfUse=()=>{
+       
+        history.push("/terms-of-use");
+        scroll.scrollToTop();
+       
+    }
+
+    const pushToPrivacyPolicy=()=>{
+       
+        history.push("/privacy-policy");
+        scroll.scrollToTop();
+       
+    }
+
     return (
         <FooterContainer>
              <FooterWrap>
@@ -51,17 +70,36 @@ const Footer = () => {
                        <FooterLinkItems>
                            <FooterLinkTitle>CONTACT INFORMATON</FooterLinkTitle>
 
-                           <FooterLinkSubTitle>ADDRESS</FooterLinkSubTitle>
-                           <FooterLinkText>Sample Address</FooterLinkText>
+                           <div className="d-flex flex-row">
+                               <FooterImg className="p-2" src={AddressIcon}/>
 
-                           <FooterLinkSubTitle>PHONE NUMBERS</FooterLinkSubTitle>
-                           <FooterLinkText>+91 1111111111</FooterLinkText>
-                           <FooterLinkText>+91 1111111111</FooterLinkText>
+                               <div className="p-2">
+                                  <FooterLinkSubTitle>ADDRESS</FooterLinkSubTitle>
+                                  <FooterLinkText>Plot no. 25/1-B Ground floor, industrial area near Ashok Park- Siwani Haryana (127046)</FooterLinkText>
+                               </div>
+                           </div>
 
-                           <FooterLinkSubTitle>EMAIL</FooterLinkSubTitle>
-                           <FooterLinkText>sample@sample.com</FooterLinkText>
-                           <FooterLinkText>sample@sample.com</FooterLinkText>
+                           <div className="d-flex flex-row">
+                               <FooterImg className="p-2" src={PhoneIcon}/>
 
+                               <div className="p-2">
+                                  <FooterLinkSubTitle>GIVE US A CALL</FooterLinkSubTitle>
+                                  <FooterLinkText>01255-277045</FooterLinkText>
+                                  <FooterLinkText>+91-8307003522</FooterLinkText>
+                               </div>
+                           </div>
+
+                           <div className="d-flex flex-row">
+                               <FooterImg className="p-2" src={MailIcon}/>
+
+                               <div className="p-2"> 
+                                <FooterLinkSubTitle>SEND US AN EMAIL</FooterLinkSubTitle>
+                                <FooterLinkText>nanorocksinnovation@gmail.com</FooterLinkText>
+                                <FooterLinkText>hello@nanorocks.in</FooterLinkText>
+                                <FooterLinkText>sales@nanorocks.in</FooterLinkText>
+                                
+                               </div>
+                           </div>
                        </FooterLinkItems>
 
                        {/* information section */}
@@ -122,7 +160,14 @@ const Footer = () => {
                      <Hr />
 
                      <div className="d-flex justify-content-between">
-                           <WebsiteRights >Terms of use| Privacy | Careers</WebsiteRights>
+                         <div className="d-flex flex-row">
+                             <WebsiteRights onClick={pushToTermsOfUse}>Terms of use </WebsiteRights>
+                             <div style={{opacity: '0.0'}}>a</div>
+                             <WebsiteRights onClick={pushToPrivacyPolicy}> Privacy </WebsiteRights>
+                             <div style={{opacity: '0.0'}}>a</div>
+                             <WebsiteRights > Careers</WebsiteRights>
+                         </div>
+                          
                            <WebsiteRights >Copyright (c) {new Date().getFullYear()}, All Rights Reserved.</WebsiteRights>
                         </div>
                  </SocialMedia>

@@ -24,7 +24,7 @@ const ContactFormComponent = () => {
                   <div className="FormContent">
                     <form onSubmit={sendEmail} className="Form">
                            
-                                    <div className="FormH1">Request for proposal for services</div>
+                                    <div className="FormH1">Request for proposal </div>
 
                                     <label className="FormLabel">Subject</label>
                                     <input type="text" className="FormInput"  name="subject" required/>
@@ -35,7 +35,7 @@ const ContactFormComponent = () => {
                                     <label className="FormLabel">Full Name</label>
                                     <input type="text" className="FormInput"  name="name"  required/>
                                 
-                                    <label className="FormLabel">Email</label>
+                                    <label className="FormLabel">Official Email</label>
                                     <input type="email" className="FormInput"  name="email" required/>
 
                                     <label className="FormLabel">Phone Number</label>

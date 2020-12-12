@@ -1,11 +1,11 @@
 import styled from 'styled-components';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-export const FooterContainer=styled.footer`
+export const FooterContainer = styled.footer`
    background-color: #101522;
 `
-export const FooterWrap=styled.div`
-   padding: 48px 24px;
+export const FooterWrap = styled.div`
+   padding: 20px 24px;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -14,7 +14,7 @@ export const FooterWrap=styled.div`
    margin: 0 auto;
 `
 
-export const FooterLinksContainer=styled.div`
+export const FooterLinksContainer = styled.div`
    display: flex;
    justify-content: center;
 
@@ -23,7 +23,7 @@ export const FooterLinksContainer=styled.div`
    }
 `
 
-export const FooterLinksWrapper=styled.div`
+export const FooterLinksWrapper = styled.div`
    display: flex;
    
 
@@ -31,7 +31,7 @@ export const FooterLinksWrapper=styled.div`
        flex-direction: column;
    }
 `
-export const FooterLinkItems=styled.div`
+export const FooterLinkItems = styled.div`
    display: flex;
    flex-direction: column;
    align-items: flex-start;
@@ -41,31 +41,47 @@ export const FooterLinkItems=styled.div`
    box-sizing: border-box;
    color: #fff;
 
-   @media screen and (max-width: 420px){
+   @media screen and (max-width: 480px){
         margin: 0;
         padding: 10px;
         width: 100%;
    }
 `
-export const FooterLinkTitle=styled.h1`
+export const FooterLinkTitle = styled.h1`
    font-weight: bold;
    font-size: 20px;
    margin-top:16px;
    margin-bottom: 16px;
+   
+   @media screen and (max-width: 480px){
+     font-size: 16px;
+   }
+
   
 `
-export const FooterLinkSubTitle=styled.h2`
+export const FooterLinkSubTitle = styled.h2`
    color: #01bf71;
    font-weight: bold;
    font-size: 16px; 
    margin-top: 10px;
+
+   @media screen and (max-width: 480px){
+      font-size: 14px;
+   }
 `
-export const FooterLinkText=styled.h2`
+export const FooterLinkText = styled.h2`
    font-weight: bold;
    font-size: 16px; 
+   @media screen and (max-width: 480px){
+      font-size: 14px;
+   }
+
+   @media screen and (max-width: 320px){
+      font-size: 10px;
+   }
 `
 
-export const FooterLink=styled(Link)`
+export const FooterLink = styled(Link)`
    font-weight: bold;
    color: #fff;
    text-decoration: none;
@@ -76,6 +92,10 @@ export const FooterLink=styled(Link)`
        color: #01bf71;
        transition: 0.3s ease-out;
        text-decoration: none;
+   }
+
+   @media screen and (max-width: 480px){
+      font-size: 14px;
    }
 `
 
@@ -100,9 +120,14 @@ export const FooterCard = styled.div`
         cursor: pointer;
     }
 
-    @media screen and (max-width: 1024px){
-      max-height: 320px;
-      max-width: 300px;
+    @media screen and (max-width: 768px){
+      max-width: 50vw;
+     
+    }
+
+    @media screen and (max-width: 540px){
+      max-width: 90vw;
+     
     }
 
   
@@ -110,12 +135,12 @@ export const FooterCard = styled.div`
     
 `
 
-export const SocialMedia=styled.section`
+export const SocialMedia = styled.section`
    max-width: 1000px;
    width: 100%;
 `
 
-export const SocialMediaWrap=styled.div`
+export const SocialMediaWrap = styled.div`
    display: flex;
    flex-direction: column;
    justify-content: space-between;
@@ -128,34 +153,52 @@ export const SocialMediaWrap=styled.div`
    }
 `
 
-export const SocialLogo=styled(Link)`
-   color: #fff;
+export const SocialLogo = styled(Link)`
+  
+   color: #01BF71;
    jsutify-self: start;
    cursor: pointer;
    text-decoration: none;
    font-size: 2rem;
    display: flex;
    align-items: center;
+   margin-top: 0px;
    margin-bottom: 16px;
    font-weight: bold;
 
    &:hover{
-      color: #01bf71;
+      color: #fff;
       transition: 0.3s ease-out;
       text-decoration: none;
   }
+
+  @media screen and (max-width: 480px){
+     font-size: 20px;
+  }
 `
-export const WebsiteRights=styled.small`
+export const WebsiteRights = styled(Link)`
+   text-decoration: none;
    margin-top: 20px;
    color: #fff;
+   font-size: 15px;
    margin-bottom: 5px;
    
-   @media screen and (max-width: 480px){
-      font-size: 10px;
+   @media screen and (max-width: 540px){
+      font-size: 9px;
+  }
+
+  @media screen and (max-width: 320px){
+   font-size: 8px;
+  }
+
+  &:hover{
+   color: #01bf71;
+   transition: 0.3s ease-out;
+   text-decoration: none;
   }
 
 `
-export const Hr=styled.hr`
+export const Hr = styled.hr`
    display: block;
    margin-top: 0.5em;
    margin-bottom: 0.5em;
@@ -166,7 +209,7 @@ export const Hr=styled.hr`
 
 `
 
-export const SocialIcons=styled.div`
+export const SocialIcons = styled.div`
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -175,7 +218,7 @@ export const SocialIcons=styled.div`
   
 `
 
-export const SocialIconLink=styled.a`
+export const SocialIconLink = styled.a`
    color: #fff;
    font-size: 24px;
 `
@@ -184,7 +227,7 @@ export const BtnWrap = styled.div`
    display: flex;
    justify-content: center;
 `
-export const Button =styled(Link)`
+export const Button = styled(Link)`
    margin-top: 50px; 
    border-radius: 50px;
    background: #01BF71  ;
@@ -208,7 +251,7 @@ export const Button =styled(Link)`
     text-decoration: none;
    }
 `
-export const CardItems=styled.div`
+export const CardItems = styled.div`
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -222,4 +265,9 @@ export const CardItems=styled.div`
         width: 100%;
    }
 `
+export const FooterImg = styled.img`
+   width: 70px;
+   height: 80px;
+`
+
 

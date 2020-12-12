@@ -107,8 +107,8 @@ export const KnownForH1 = styled.h1`
 export const KnownForH2 = styled.h2`
     font-weight: bold;
     font-size: 1rem;
-    margin-bottom: 10px;
-   
+    margin-top: 15px;
+    margin-bottom: 5px;
     text-align: center;
 `
 

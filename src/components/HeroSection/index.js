@@ -13,7 +13,7 @@ const HeroSection = () => {
               </HeroBg>
           
             <HeroContent>
-                 <HeroH1>End to end Automation using IoT and NanoTechnology</HeroH1>
+                 <HeroH1>Smart Automation using IOT and Nanotechnology</HeroH1>
                  <HeroP>
                      Contact us for turning your ideas into meaningful applications!
                  </HeroP>
