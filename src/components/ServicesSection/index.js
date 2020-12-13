@@ -43,7 +43,7 @@ const Services = () => {
             <Wrapper data-aos="fade-up">
 
                 <div className="d-flex flex-column">
-                    <Subtitle>•Nanotechnology creates exciting opportunities for new business models, process efficiencies and improved forms of engagement. These include: unproven software functionality and use cases, a story behind new micro-devices, sensors and actuators, advanced communication protocols and complex development scenarios and industry- specific compliance and security requirements.</Subtitle>
+                    <Subtitle>• Nanotechnology creates exciting opportunities for new business models, process efficiencies and improved forms of engagement. These include: unproven software functionality and use cases, a story behind new micro-devices, sensors and actuators, advanced communication protocols and complex development scenarios and industry- specific compliance and security requirements.</Subtitle>
                     <Subtitle >• Our end to end IoT engineering services enable customers to leverage the architecture and build connected devices all together using micro-sensors, IoT Chipsets, firmware development and create full- stack infrastructure (Web, Android- iOS framework, Cloud, Analytics) around it</Subtitle>
                 </div>
 

@@ -1,22 +1,9 @@
 import styled from 'styled-components';
 
-export const Container=styled.div`
-   
-padding-top:10px;
-min-height: 1200px;
-display: flex;
-
-flex-direction:  column;
-justify-content: center;
-align-items: left;
-background: #010606;
-
-
-
-`
-
 export const H1 = styled.h1`
-    text-align: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    
     font-size: 3.5rem;
     color: #01BF71;
     margin-top: 200px;
@@ -37,10 +24,14 @@ export const H1 = styled.h1`
         margin-bottom: 60px;
     }
 `
+
 export const H2 = styled.h2`
+    padding-left: 5%;
+    padding-right: 5%;
+     text-align: left;
     margin-bottom: 10px;
     margin-top: 30px;
-    font-size: 1.5rem;
+    font-size: 25px;
     color: #01BF71;
    
     font-weight: bold;
@@ -55,29 +46,15 @@ export const H2 = styled.h2`
    
 `
 
-export const Wrapper = styled.div`
-       
-        display: grid;
-        z-index: 1;
-        min-height: 1200px;
-        max-width: 3000px;
-        margin-right: auto;
-        margin-left: auto;
-        padding: 0 24px;
-        justify-content: center;
-        margin-bottom: 100px;
-       
-   
-`
-
 export const Subtitle = styled.p`
    word-spacing: 3px;
    text-align: justify;
-   max-width: 700px;
+   max-width: 800px;
    inter-word: 1px;
    text-justify: inter-word;
-  
-   font-size: 18px;
+   padding-left: 5%;
+    padding-right: 5%;
+   font-size: 14px;
   
    color:  #fff;
 
@@ -89,4 +66,3 @@ export const Subtitle = styled.p`
       
     }
 `
-

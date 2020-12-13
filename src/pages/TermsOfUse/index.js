@@ -3,7 +3,8 @@ import {
     Container,
     H1,
     H2,
-    Subtitle
+    Subtitle,
+    Wrapper
 } from './TermsOfUseElements';
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
@@ -22,6 +23,7 @@ const TermsOfUse = () => {
              <Navbar toggle={toggle}/>
              <SideBar  isOpen={isOpen} toggle={toggle}/>
                 <Container>
+                    <Wrapper>
                     <H1>Terms Of Use</H1>
                     <Subtitle>This website is owned and operated by Nanorocks Innovation LLP. These Terms set forth the terms and conditions under which you may use our website and services as offered by us. This website offers information on our services and previous projects. By accessing or using the website of our service, you approve that you have read, understood, and agree to be bound by these Terms.</Subtitle>
 
@@ -49,11 +51,13 @@ const TermsOfUse = () => {
 
                   
                     <Subtitle>Customer support details and contact info. </Subtitle>
-                    <Subtitle >
+                    <Subtitle style={{textAlign: 'left'}}>
                            For more details contact – nanorocksinnovation@gmail.com
                     </Subtitle>
 
-                </Container>
+               
+                    </Wrapper>
+                    </Container>
              <Footer />
         </>
        

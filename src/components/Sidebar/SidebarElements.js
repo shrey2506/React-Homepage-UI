@@ -1,9 +1,10 @@
 import styled from 'styled-components';
-import { Link as LinkScroll } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 import { FaTimes } from 'react-icons/fa';
 
 export const SidebarContainer = styled.aside`
+   margin-right: 2%;
    position: fixed;
    z-index: 999;
    width: 50%;
@@ -17,6 +18,10 @@ export const SidebarContainer = styled.aside`
    transition: 0.3s ease-in-out;
    opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
    top:${({ isOpen }) => (isOpen ? '0' : '-100%')};
+
+   @media screen and (max-width: 360px){
+      margin-right: 12%;
+   }
   
    
 `;
@@ -53,7 +58,7 @@ export const SidebarMenu = styled.ul`
    }
 `;
 
-export const SidebarLink = styled(LinkScroll)`
+export const SidebarLink = styled(Link)`
    display: flex;
    
    font-size: 1rem;
@@ -70,6 +75,7 @@ export const SidebarLink = styled(LinkScroll)`
    &:hover{
        color: #01bf71;
        transtion: 0.2s ease-in-out;
+       text-decoration: none;
    }
 `;
 

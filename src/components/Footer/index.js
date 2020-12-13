@@ -59,6 +59,13 @@ const Footer = () => {
        
     }
 
+    const pushToCareers=()=>{
+       
+        history.push("/careers");
+        scroll.scrollToTop();
+       
+    }
+
     return (
         <FooterContainer>
              <FooterWrap>
@@ -165,7 +172,7 @@ const Footer = () => {
                              <div style={{opacity: '0.0'}}>a</div>
                              <WebsiteRights onClick={pushToPrivacyPolicy}> Privacy </WebsiteRights>
                              <div style={{opacity: '0.0'}}>a</div>
-                             <WebsiteRights > Careers</WebsiteRights>
+                             <WebsiteRights onClick={pushToCareers}> Careers</WebsiteRights>
                          </div>
                           
                            <WebsiteRights >Copyright (c) {new Date().getFullYear()}, All Rights Reserved.</WebsiteRights>

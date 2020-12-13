@@ -10,7 +10,7 @@ export const ServicesContainer = styled.div`
 
 
    @media screen and (max-width: 540px){
-        height: 1300px;
+        height: 1700px;
        
    }
   
@@ -111,8 +111,8 @@ export const ServicesP = styled.p`
     text-align: center;
 `
 export const Subtitle = styled.p`
-   text-align: left;
-   max-width: 540px;
+   text-align: justify;
+   max-width: 800px;
    margin-bottom: 35px;
    font-weight: bold;
    font-size: 20px;
@@ -123,6 +123,12 @@ export const Subtitle = styled.p`
        
     font-size: 16px;
    }
+
+   @media screen and (max-width: 480px){
+    text-align: none;
+    font-size: 14px;
+   }
+
 `
 
 export const Wrapper = styled.div`

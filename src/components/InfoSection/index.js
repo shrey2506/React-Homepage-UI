@@ -35,6 +35,7 @@ const InfoSection = ({
       p1,
       p2,
       p3,
+      redirectTo
       
     }) => {
 
@@ -60,7 +61,7 @@ const InfoSection = ({
                               
                               <BtnWrap>
                                    <Button 
-                                       to="home" 
+                                       to={redirectTo} 
                                        smooth={true}
                                        duration={500}
                                        spy={true}

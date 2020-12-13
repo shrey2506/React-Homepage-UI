@@ -68,6 +68,12 @@ export const KnownForCard = styled.div`
         cursor: pointer;
     }
 
+    @media screen and (width: 1024px){
+        max-width: 280px;
+    }
+
+
+
     @media screen and (max-width: 1024px){
         margin-bottom: 0px;
     }
@@ -77,13 +83,10 @@ export const KnownForCard = styled.div`
 export const KnownForIcon = styled.img`
     margin-top: 10px;
     border-radius: 10px;
-    height: 60%;
-    width: 60%;
+    height: 70%;
+    width: 70%;
     margin-bottom: 10px;
-    // @media screen and (max-width: 1024px){
-    //     height: 220px;
-    //     width: 100%;
-    // }
+    
 
 `
 
@@ -105,6 +108,7 @@ export const KnownForH1 = styled.h1`
 `
 
 export const KnownForH2 = styled.h2`
+    text-align: justify;
     font-weight: bold;
     font-size: 1rem;
     margin-top: 15px;

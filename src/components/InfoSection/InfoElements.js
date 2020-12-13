@@ -16,31 +16,39 @@ export const InfoWrapper = styled.div`
    height: 1000px;
    width: 100%;
    max-width: 3000px;
-   margin-right: auto;
-   margin-left: auto;
+  
    padding: 0 24px;
    justify-content: center;
 
-   @media screen and (max-width: 1024px){
+   @media screen and (width: 1024px){
      padding-top: 80px;
      height: 1200px;
    }
 
-   @media screen and (max-width: 768px){
+   @media screen and (width: 768px){
       padding-top: 80px;
       height: 700px;
     }
+    
 
     @media screen and (max-width: 480px){
-      height: 800px;
-      margin-top: 50px;
+      height: 500px;
+      margin-top: 10px;
+    }
+
+    @media screen and (max-width: 320px){
+      height: 600px;
+      margin-top: 10px;
     }
 
 
 `
 export const InfoRow = styled.div`
-   margin-top: 0px;
-   margin-bottom: 100px;
+padding-left: 5%;
+padding-right: 5%;
+
+   margin-top: 10px;
+   margin-bottom: 20px;
    display: grid;
    grid-auto-columns: minmax(auto, 1fr);
    align-items: center;
@@ -49,18 +57,20 @@ export const InfoRow = styled.div`
    @media screen and (max-width : 768px){
      grid-template-areas: ${({ imgStart }) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
    }
+
+   
 `
 
 export const Column1 = styled.div`
   
    margin-bottom: 15px;
-   padding: 0 15px;
+   padding: 0 10px;
    grid-area: col1;
 
 `
 export const Column2 = styled.div`
    margin-bottom: 15px;
-   padding: 0 15px;
+   padding: 0 10px;
    grid-area: col2;
 
    @media screen and (max-width: 768px){
@@ -100,12 +110,25 @@ export const Heading = styled.h1`
 `
 
 export const Subtitle = styled.p`
-    text-align: left;
-   max-width: 440px;
+    text-align: justify;
+   
+   max-width: 600px;
    margin-bottom: 35px;
    font-size: 18px;
    line-height: 24px;
    color: ${({ darkText }) => (darkText ? '#101606' : '#fff')};
+
+   @media screen and (max-width: 1024px){
+      max-width: 400px;
+      font-size: 14px;
+  }
+
+   @media screen and (max-width: 480px){
+      
+      font-size: 10px;
+  }
+
+   
 `
 
 export const BtnWrap = styled.div`
@@ -124,7 +147,11 @@ export const ImgWrap = styled.div`
 export const Img = styled.img`
    width: 100%;
    margin: 0 0 10px 0;
-   padding-right: 0;
+   padding-right: 0 20px;
+
+   @media screen and (width: 1024px){
+      width: 90%;
+   }
 
    @media screen and (max-width: 768px){
       width: 0;

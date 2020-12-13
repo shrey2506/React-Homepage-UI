@@ -4,11 +4,12 @@ import Navbar from '../../components/Navbar';
 import SideBar from '../../components/Sidebar';
 import {
     Container,
-    H1,
-    H2,
-    Subtitle,
+    Wrapper,
   
+
 } from '../TermsOfUse/TermsOfUseElements';
+
+import { H1,H2, Subtitle} from './PrivacyPolicyElements';
 
 const PrivacyPolicy = () => {
 
@@ -23,7 +24,8 @@ const PrivacyPolicy = () => {
             <Navbar toggle={toggle} />
             <SideBar isOpen={isOpen} toggle={toggle}/>
                  <Container>
-                      <H1>Privacy Policy</H1>
+                     <Wrapper>
+                     <H1>Privacy Policy</H1>
                       <Subtitle>This privacy policy applies to information that we collect about you when using our websites or provide contact details for us to contact you, or when signing up to any of our newsletters.</Subtitle>
 
                       <H2>Your privacy is important to us and this is our guiding principles:</H2>
@@ -50,8 +52,8 @@ const PrivacyPolicy = () => {
                      
                      <H2>What about our privacy policy for the services we provide?</H2>
                      <Subtitle>For the services we provide there is a separate privacy policy you as a user have to accept before the service is made available to you.</Subtitle>
-                      
-                      
+                     </Wrapper>
+                    
 
                  </Container>
             <Footer />

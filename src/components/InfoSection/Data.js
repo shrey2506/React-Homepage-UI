@@ -56,7 +56,8 @@ export const HomeObjThree={
     dark: true,
     dark2: true,
     primary: true,
-    darkText: false
+    darkText: false,
+   
 }
 
 export const HomeObjFour={
@@ -77,4 +78,23 @@ export const HomeObjFour={
     dark2: true,
     primary: true,
     darkText: false
+}
+
+export const HomeObjFive={
+    id: 'Careers',
+    lightBg: false,
+    lightText: true,
+    lighttextDesc: true,
+    topLine: 'Careers',
+    headline: 'Explore a Career at NanoRocks Innovation',
+  
+    imgStart: false,
+    buttonLabel: 'View Jobs',
+    img: '/images/Careers.svg',
+    alt: 'IOT',
+    dark: true,
+    dark2: true,
+    primary: true,
+    darkText: false,
+    redirectTo:"careers"
 }

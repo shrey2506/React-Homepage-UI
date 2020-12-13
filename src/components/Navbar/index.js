@@ -1,4 +1,5 @@
 import React,{useState, useEffect} from 'react';
+
 import {  useHistory } from 'react-router-dom';
 import Icon from '../../Images/Logo.png';
 import {FaBars} from 'react-icons/fa';
@@ -25,6 +26,14 @@ const Navbar = ({toggle}) => {
     const toggleHome=()=>{
         scroll.scrollToTop();
         history.push("/");
+    }
+
+
+    const pushToCareers=()=>{
+       
+        history.push("/careers");
+        scroll.scrollToTop();
+       
     }
 
     const changeNav=()=>{
@@ -91,7 +100,8 @@ const Navbar = ({toggle}) => {
 
                     <NavItem>
                         <NavLinks 
-                           to="contact" 
+                           onClick={pushToCareers}
+                           to="/careers" 
                            smooth={true}
                            duration={500}
                            spy={true}

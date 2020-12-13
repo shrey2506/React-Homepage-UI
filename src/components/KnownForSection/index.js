@@ -27,7 +27,7 @@ const KnownFor = () => {
                 
                     <KnownForCard>
                         <KnownForIcon  data-aos="fade-right"  src={Icon1} />
-                        <KnownForH2>Helping organizations leverage the full potential bringing new innovations and refinements to their business processes</KnownForH2>
+                        <KnownForH2>Helping organizations leverage the full potential bringing new innovations and refinements</KnownForH2>
                     </KnownForCard>
                    
                
