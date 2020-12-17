@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
    color: #fff;
+   display: flex;
    background: #010606;
 
    @media screen and (max-width : 768px){
@@ -13,34 +14,39 @@ export const Wrapper = styled.div`
   
    
    z-index: 1;
-   min-height: 1000px;
+   min-height: 1200px;
    width: 100%;
    max-width: 3000px;
-   
-   padding-left: 10%;
-   padding-right: 10%;
+   padding-bottom: 10%;
+   padding-left: 30%;
+   padding-right: 30%;
    justify-content: center;
 
    @media screen and (width: 1024px){
+    padding-left: 10%;
+    padding-right: 10%;
      padding-top: 80px;
-     height: 1200px;
+     min-height: 1200px;
    }
 
    @media screen and (width: 768px){
+    padding-left: 10%;
+    padding-right: 10%;
       padding-top: 80px;
-      height: 700px;
+      min-height: 700px;
     }
     
-
-    @media screen and (max-width: 480px){
-      height: 500px;
-      margin-top: 10px;
+    @media screen and (max-width: 540px){
+      padding-left: 10%;
+      padding-right: 10%;
+      min-height: 500px;
     }
+    
+    
 
-    @media screen and (max-width: 320px){
-      height: 600px;
-      margin-top: 10px;
-    }
+   
+
+   
 
 `
 
@@ -51,15 +57,24 @@ export const H1 = styled.h1`
     font-weight: bold;
     font-size: 3rem;
     color: #fff;
-    padding-bottom: 40px;
+    margin-bottom: 50px;
+    
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: uppercase ;
 
     @media screen and (max-width: 480px){
-        margin-top: 50px;
+        padding-top: 0px;
+        
         font-size: 2rem;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 360px){
+       
+        
+        font-size: 1.5rem;
+        
     }
 `
 export const TopLine = styled.p`
@@ -68,36 +83,46 @@ export const TopLine = styled.p`
    font-size: 16px;
    line-weight: 16px;
    font-weight: 700;
-   letter-spacing: 1.4px;
-   text-transform: uppercase ;
+   letter-spacing: 1.15px;
+ 
    margin-bottom: 16px;
+   @media screen and (max-width: 480px){
+    
+    margin-bottom: 4px;
+}
+
 `
 export const JobHeading = styled.h2`
     cursor: pointer;
-    padding-top: 20px;
+    padding-top: 15px;
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 1.7rem;
     color: #fff;
-    padding-bottom: 20px;
+   
     font-weight: 700;
     letter-spacing: 1.4px;
-    text-transform: uppercase ;
+    
 
     @media screen and (max-width: 480px){
-        
-        font-size: 2rem;
+         
+        font-size: 1rem;
         
     }
 `
 
 export const Description = styled.p`
-    text-align: justify;
-   
+    text-align: left;
+    
    max-width: 600px;
-   margin-bottom: 35px;
-   font-size: 18px;
+   padding-left: 10%;
+   margin-bottom: 13px;
+   font-size: 16px;
    line-height: 24px;
    color:  #fff;
+
+   :before {
+    content:"• ";
+   }
 
    @media screen and (max-width: 1024px){
       max-width: 400px;
@@ -105,7 +130,7 @@ export const Description = styled.p`
   }
 
    @media screen and (max-width: 480px){
-      
+      margin-bottom: 8px;
       font-size: 12px;
   }
 

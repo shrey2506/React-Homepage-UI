@@ -5,11 +5,13 @@ import SideBar from '../../components/Sidebar';
 import {
     Container,
     Wrapper,
-  
+    H1,
+    H2,
+    Subtitle
 
 } from '../TermsOfUse/TermsOfUseElements';
 
-import { H1,H2, Subtitle} from './PrivacyPolicyElements';
+
 
 const PrivacyPolicy = () => {
 
@@ -29,18 +31,17 @@ const PrivacyPolicy = () => {
                       <Subtitle>This privacy policy applies to information that we collect about you when using our websites or provide contact details for us to contact you, or when signing up to any of our newsletters.</Subtitle>
 
                       <H2>Your privacy is important to us and this is our guiding principles:</H2>
-                      <li>
-                          <ul>
-                          <Subtitle>• We are thoughtful about the personal information we ask you to provide and the personal information that we collect about you</Subtitle>
-                          </ul>
-                          <ul>
-                          <Subtitle>• We store information for only as long as we have a reason to keep it</Subtitle>
-                          </ul>
-                          <ul>
-                          <Subtitle>• We aim for full transparency on how we gather and use your personal information</Subtitle>
-                          </ul>
-                      </li>
-
+                      
+                        <div className="d-flex flex-column">
+                            <Subtitle>• We are thoughtful about the personal information we ask you to provide and the personal information that we collect about you</Subtitle>
+                            
+                            <Subtitle>• We store information for only as long as we have a reason to keep it</Subtitle>
+                            
+                            <Subtitle>• We aim for full transparency on how we gather and use your personal information</Subtitle>
+                        </div>
+                        
+                         
+                     
                       <H2>How do we process your personal data?</H2>
                      <Subtitle>When you are browsing our websites, we process your IP address, cookies, information how you interact with our website, and contact detail in case you subscribe to a newsletter or fill in a form for us to contact you. We process your data for the purpose of communicating with you, including marketing purposes, to optimize the website and improve the user friendliness.</Subtitle>
 

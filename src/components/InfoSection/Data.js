@@ -67,9 +67,10 @@ export const HomeObjFour={
     lighttextDesc: true,
     topLine: '',
     headline: 'Why Us',
-    p1: 'Smart Factory solutions for Original Equipment Manufacturers (OEM) and Heavy Machinery manufacturers',
-    p2: '1. Provide gateways, network, comprehensive software and support services for an end-to-end IoT solution.  Use information from your processes to make your customers more loyal.',
-    p3: '2. Smart factory Solutions for Original Equipment Manufacturers (OEM) and Heavy Machinery manufacturers, first iteration of the solution within 7 business days with detailed reports & analytics. Efficient packaging & configuration management support & services post deployment',
+    p1: '1. Smart Factory solutions for Original Equipment Manufacturers (OEM) and Heavy Machinery manufacturers.',
+    p2: '2. Provide gateways, network, comprehensive software and support services for an end-to-end IoT solution.  Use information from your processes to make your customers more loyal.',
+    p3: '3. First iteration of the solution within 7 business days with detailed reports & analytics. Efficient packaging & configuration management support & services post deployment.',
+    p4: '4. Our research approach, coupled with the most advanced technologies, improve productivity, quality and predictability',
     imgStart: false,
     buttonLabel: 'CONTACT US',
     img: '/images/question.svg',
@@ -86,12 +87,126 @@ export const HomeObjFive={
     lightText: true,
     lighttextDesc: true,
     topLine: 'Careers',
-    headline: 'Explore a Career at NanoRocks Innovation',
+    p1: 'Are you a person who is passionate about IoT products and advocate about the industry latest innovations? If you share our vision to unlock the potential of connectivity, then we look forward to receiving your application',
   
     imgStart: false,
     buttonLabel: 'View Jobs',
     img: '/images/Careers.svg',
     alt: 'IOT',
+    dark: true,
+    dark2: true,
+    primary: true,
+    darkText: false,
+    redirectTo:"careers"
+}
+
+export const HomeObjSix={
+    id: 'industrial-automation',
+    lightBg: false,
+    lightText: true,
+    lighttextDesc: true,
+    topLine: 'Industrial Automation',
+    
+  
+    imgStart: false,
+    buttonLabel: 'View More',
+    img: '/images/IndustryPages/industrialAutomation.svg',
+    alt: 'Industrial Auotmation',
+    dark: true,
+    dark2: true,
+    primary: true,
+    darkText: false,
+    redirectTo:"careers"
+}
+
+export const HomeObjSeven={
+    id: 'chemical-manufacturing',
+    lightBg: false,
+    lightText: true,
+    lighttextDesc: true,
+    topLine: 'Chemical and Manufacturing',
+    
+  
+    imgStart: false,
+    buttonLabel: 'View More',
+    img: '/images/IndustryPages/chemical.svg',
+    alt: 'Industrial Auotmation',
+    dark: true,
+    dark2: true,
+    primary: true,
+    darkText: false,
+    redirectTo:"careers"
+}
+
+export const HomeObjEight={
+    id: 'pharmaceuticals',
+    lightBg: false,
+    lightText: true,
+    lighttextDesc: true,
+    topLine: 'Pharmaceuticals',
+    
+  
+    imgStart: false,
+    buttonLabel: 'View More',
+    img: '/images/IndustryPages/pharma.svg',
+    alt: 'Industrial Auotmation',
+    dark: true,
+    dark2: true,
+    primary: true,
+    darkText: false,
+    redirectTo:"careers"
+}
+
+export const HomeObjNine={
+    id: 'automotive',
+    lightBg: false,
+    lightText: true,
+    lighttextDesc: true,
+    topLine: 'Automotive',
+    
+  
+    imgStart: false,
+    buttonLabel: 'View More',
+    img: '/images/IndustryPages/automotive.svg',
+    alt: 'Industrial Auotmation',
+    dark: true,
+    dark2: true,
+    primary: true,
+    darkText: false,
+    redirectTo:"careers"
+}
+
+export const HomeObj10={
+    id: 'agriculture',
+    lightBg: false,
+    lightText: true,
+    lighttextDesc: true,
+    topLine: 'Agriculture',
+    
+  
+    imgStart: false,
+    buttonLabel: 'View More',
+    img: '/images/IndustryPages/agriculture.svg',
+    alt: 'Industrial Auotmation',
+    dark: true,
+    dark2: true,
+    primary: true,
+    darkText: false,
+    redirectTo:"careers"
+}
+
+export const HomeObj11={
+    id: 'food-tech',
+    lightBg: false,
+    lightText: true,
+    lighttextDesc: true,
+    topLine: 'Food Technology',
+    
+  
+    imgStart: false,
+    buttonLabel: 'View More',
+    img: '/images/IndustryPages/foodTech.svg',
+    alt: 'Industrial Auotmation',
     dark: true,
     dark2: true,
     primary: true,

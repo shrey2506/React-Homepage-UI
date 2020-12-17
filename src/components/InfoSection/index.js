@@ -35,13 +35,15 @@ const InfoSection = ({
       p1,
       p2,
       p3,
+      p4,
       redirectTo
       
     }) => {
 
     useEffect(()=>{
+        console.log(window.innerWidth)
          Aos.init({
-             duration: 1600
+             duration: 1200
          });
     },[]);
 
@@ -58,6 +60,7 @@ const InfoSection = ({
                               <Subtitle darkText={darkText}>{p1}</Subtitle>
                               <Subtitle darkText={darkText}>{p2}</Subtitle>
                               <Subtitle darkText={darkText}>{p3}</Subtitle>
+                              <Subtitle darkText={darkText}>{p4}</Subtitle>
                               
                               <BtnWrap>
                                    <Button 

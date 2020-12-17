@@ -34,17 +34,14 @@ const Services = () => {
                     <ServicesIcon data-aos="fade-left" src={Icon2} />
                     <ServicesH2>Nanotechnology</ServicesH2>
                 </ServicesCard>
-
-
-
-
-
             </ServicesWrapper >
             <Wrapper data-aos="fade-up">
 
                 <div className="d-flex flex-column">
-                    <Subtitle>• Nanotechnology creates exciting opportunities for new business models, process efficiencies and improved forms of engagement. These include: unproven software functionality and use cases, a story behind new micro-devices, sensors and actuators, advanced communication protocols and complex development scenarios and industry- specific compliance and security requirements.</Subtitle>
-                    <Subtitle >• Our end to end IoT engineering services enable customers to leverage the architecture and build connected devices all together using micro-sensors, IoT Chipsets, firmware development and create full- stack infrastructure (Web, Android- iOS framework, Cloud, Analytics) around it</Subtitle>
+                    <Subtitle>•	The Internet of Things is a concept where every electronic device can be connected to the digital network by simply embedding certain computer chips or sensors. In other words, IoT application development platform is indeed making the electronic things “Smart”</Subtitle>
+                    <Subtitle>•	Imagine the productivity loss in a factory due to unplanned downtime or the quality losses which would occur because certain operating conditions when in deviation could result in quality losses. At times, these failures start a domino effect as the failure of machine, would delay the fulfillment of the promised orders and resulting in customer dissatisfaction and potential loss of revenues.</Subtitle>
+                    <Subtitle>•	Nanotechnology has the potential to influence almost every stage of manufacturing. Microsensors can help monitor the state of equipment and, using the big data from sensors, an IoT system give real-time (or near real-time) alerts when problems are detected. It provides much greater control over the properties of materials, which at times leads to completely new applications. </Subtitle>
+                    <Subtitle>So, what we could expect in near future is the machines sending out alerts and notifications to the enterprise which are actionable before the point of failure.</Subtitle>
                 </div>
 
 

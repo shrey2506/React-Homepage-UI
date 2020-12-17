@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container=styled.div`
+export const Container = styled.div`
    
 padding-top:10px;
 min-height: 1200px;
@@ -16,40 +16,41 @@ background: #010606;
 `
 
 export const H1 = styled.h1`
-    text-align: left;
+    text-align: center;
     font-size: 3.5rem;
     color: #01BF71;
     margin-top: 200px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-weight: bold;
 
     @media screen and (max-width: 480px){
-        padding-left: 10%;
-        padding-right: 10%;
-        margin-top: 200px;
-        font-size: 2.5rem;
-        margin-bottom: 60px;
+        padding-left: 5%;
+        padding-right: 5%;
+       
+        font-size: 2rem;
+        
     }
 
     @media screen and (max-width: 768px){
         margin-top: 200px;
         margin-bottom: 20px;
-        margin-bottom: 60px;
+       
     }
 `
 export const H2 = styled.h2`
-    margin-bottom: 10px;
-    margin-top: 30px;
-    font-size: 1.5rem;
+    margin-bottom: 0px;
+    margin-top: 12px;
+    font-size: 1.6rem;
     color: #01BF71;
    
     font-weight: bold;
 
     @media screen and (max-width: 540px){
-        margin-bottom: 10px;
-        margin-top: 40px;
-        padding-left: 10%;
-        padding-right: 10%;
+        margin-bottom: 5px;
+        margin-top: 20px;
+        padding-left: 5%;
+        padding-right: 5%;
+       
     }
 
    
@@ -71,21 +72,19 @@ export const Wrapper = styled.div`
 `
 
 export const Subtitle = styled.p`
-   word-spacing: 3px;
-   text-align: justify;
-   max-width: 700px;
-   inter-word: 1px;
-   text-justify: inter-word;
-  
-   font-size: 18px;
+
+   text-align: left;
+   max-width: 800px;
+   
+   font-size: 16px;
   
    color:  #fff;
 
     @media screen and (max-width: 540px){
        max-width: 440px;
        font-size: 14px;
-       padding-left: 10%;
-       padding-right: 10%;
+       padding-left: 5%;
+       padding-right: 5%
       
     }
 `

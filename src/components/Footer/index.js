@@ -31,12 +31,14 @@ import {
 } from './FooterElements';
 
 const Footer = () => {
+    const history=useHistory();
+    
     const toggleHome=()=>{
         scroll.scrollToTop();
         history.push("/");
     }
 
-    const history=useHistory();
+    
 
     const pushToContactForm=()=>{
        
@@ -112,10 +114,10 @@ const Footer = () => {
                        {/* information section */}
 
 
-                       <FooterLinkItems>
+                       <FooterLinkItems style={window.innerWidth>768 ?{paddingLeft: '20px'}: {}}>
                            <FooterLinkTitle>INFORMATON</FooterLinkTitle>
 
-                           <FooterLink>About Us</FooterLink>
+                           <FooterLink style={{paddingTop: '13px'}}>About Us</FooterLink>
                            <FooterLink>Our Services</FooterLink>
                            <FooterLink>Blogs</FooterLink>
                            <FooterLink>Careers</FooterLink>

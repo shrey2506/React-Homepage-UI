@@ -8,9 +8,8 @@ export const ServicesContainer = styled.div`
    align-items: center;
    background: #010606;
 
-
    @media screen and (max-width: 540px){
-        height: 1700px;
+        min-height: 1300px;
        
    }
   
@@ -45,7 +44,7 @@ export const ServicesWrapper = styled.div`
 
 export const ServicesCard = styled.div`
     
-    margin-bottom: 200px;
+    margin-bottom: 60px;
     background: #fff;
     display: flex;
     flex-direction: column;
@@ -111,34 +110,38 @@ export const ServicesP = styled.p`
     text-align: center;
 `
 export const Subtitle = styled.p`
-   text-align: justify;
-   max-width: 800px;
-   margin-bottom: 35px;
-   font-weight: bold;
-   font-size: 20px;
-   line-height: 24px;
-   color:  #fff;
-
-   @media screen and (width: 1024px){
-       
+    text-align: left;
+   
+    margin-top: 0;
+    
+    max-width: 800px;
+    margin-bottom: 20px;
     font-size: 16px;
-   }
+    line-height: 24px;
+    color:  #fff;
+
+   @media screen and (max-width: 1024px){
+      max-width: 400px;
+      font-size: 14px;
+  }
 
    @media screen and (max-width: 480px){
-    text-align: none;
-    font-size: 14px;
-   }
+      padding-right: 10%;
+      padding-left: 10%;
+      font-size: 10px;
+  }
 
+   
 `
 
 export const Wrapper = styled.div`
-   
-   margin: 40px auto;
+  
+  
    display: grid;
    grid-template-columns: 1fr  ;
    align-items: start;
    grid-gap: 25px;
-   padding: 0 50px;
+  
 
    @media screen and (width: 1024px){
        
