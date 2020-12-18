@@ -2,7 +2,7 @@
 
 A resposive and great looking UI made React.js and using of styled-components.
 
-Link:- https://nanorocks-react-app.web.app/
+Link:- https://nanorocks.web.app/
 
 To run the project lcoally:-
 1. Downlaod the project onto your machine.
